@@ -142,9 +142,16 @@ input::placeholder{
 @media (max-width: 599px) {
 	#body-wrap .col-8 {
 	    width: 100%;
+	    display: flex;
+	    flex-direction: column; /* Stack elements vertically */
+	    align-items: center; /* Center align items horizontally */
 	}
 	.container {
 		width: 100%;
+	}
+	.logo img {
+	    max-width: 80%; /* Make logo larger on mobile */
+	    height: auto; /* Maintain aspect ratio */
 	}
 	#body-wrap .page-title {
 	    width: 98%;
@@ -256,4 +263,4 @@ input::placeholder{
 	</div><!--body-wrap-->
 
 </body>
-</html>
+</html
