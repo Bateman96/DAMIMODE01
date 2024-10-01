@@ -1,4 +1,3 @@
-html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,17 +64,17 @@ header#header {
     text-align: center; /* Center align text */
 }
 .main-content h1 {
-    font-size: 3em;
+    font-size: 3.5em; /* Increased font size */
     font-weight: 700;
     color: #111;       
-    margin-bottom: 0; 
+    margin-bottom: 20px; /* Added margin for spacing */
 }
 
 .main-content p {
     font-size: 1.2em;
     color: #666;
     width: 70%;
-    margin: 0 auto; /* Center align paragraph */
+    margin: 0 auto 40px; /* Center align paragraph and added margin for spacing */
 }
 #form .form-group {
     display: flex;
@@ -198,13 +197,18 @@ input::placeholder{
 	#body-wrap .col-4 {
 	    margin-left: 0; /* Remove margin for better mobile alignment */
 	    height: auto; /* Allow height to adjust based on content */
+	    position: absolute; /* Position image behind content */
+	    top: 0;
+	    left: 0;
+	    z-index: -1;
+	    opacity: 0.1; /* Make image semi-transparent */
 	}
 }
 
 /* Adjustments for logo and image */
 .logo img {
     width: 100%; /* Ensure logo scales with width */
-    max-width: 300px; /* Increase maximum width for visibility */
+    max-width: 450px; /* Increased maximum width for visibility */
     height: auto;
 }
 
@@ -224,7 +228,7 @@ input::placeholder{
 
 					<header id="header">
 						<div class="logo">
-							<img src="images/1.png" alt="logo">
+							<img src="images/1.png" alt="logo" style="max-width: 550px;"> <!-- Increased logo size for web -->
 						</div>	
 					</header>
 
@@ -268,7 +272,7 @@ input::placeholder{
 			</div><!--col-8-->
 
 			<div class="col-4">
-				<img src="images/21.png" alt="wallpaper" class="sideimg">
+				<img src="images/21.png" alt="wallpaper" class="sideimg" style="transform: translateY(-50px);"> <!-- Shifted image slightly for web -->
 			</div>		
 		</div><!--row-->
 
