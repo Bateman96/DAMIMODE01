@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>DAMIMODE</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    <!-- Add FontAwesome CDN for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<style type="text/css">
+
+body {
+	font-family: "Roboto", sans-serif;
+    color: #949393;
+    margin: 0;
+    background-color: white;
+}
+a, button {
+    transition: 0.3s all ease-out;
+}
+a {
+    color: #111;
+    text-decoration: none;
+}
+a:hover {
+    color: #0043ee;
+}
+.row {
+    display: flex;
+}
+.container {
+    width: 530px;
+    margin: 120px auto;
+}
+#body-wrap .col-8 {
+    width: 70%;
+}
+#body-wrap .col-4 {
+    width: 30%;
+    height: 750px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+header#header {
+    margin-bottom: 70px;
+}
+.main-content {
+    color: #111;
+}
+.main-content h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #111;       
+    margin-bottom: 0; 
+}
+
+.main-content p {
+    font-size: 1.2em;
+    color: #666;
+    width: 70%;
+}
+#form .form-group {
+    display: flex;
+    margin: 20px 0;
+}
+input::placeholder{
+   color: #949393;
+}
+.form-group input.form-control {
+    width: 250px;
+    height: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 20px;
+    border: none;
+    background: #f5f5f5;
+}
+.form-group button.submit-button {
+    padding: 18px 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: linear-gradient(145deg, #111, #111); /* Golden gradient */
+    border: none;
+	cursor: pointer;
+    color: #fff;
+}
+.form-group button.submit-button:hover {
+    background: linear-gradient(145deg, #f39c12, #e67e22); /* Darker gradient on hover */
+}
+.form-group button.submit-button span {
+    font-weight: 700;
+    padding-left: 5px;
+}
+#footer .social-links {
+    padding-top: 20px;
+}
+#footer .social-links ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+}
+#footer .social-links li {
+    padding-right: 20px;
+}
+#footer .social-links ul a {
+    font-size: 1.6em;
+    color: #626262;
+    text-decoration: none;
+}
+#footer .social-links ul a:hover {
+    color: #111;
+}
+.copyright p {
+    color: #626262;
+}
+
+@media (max-width: 999px) {
+	.container {
+	    padding-left: 20px;
+	}
+	#body-wrap .col-4 {
+	    width: 35%; /* Adjusted width for better centering */
+	    margin-left: -30px; /* Increased negative margin */
+	    z-index: -1;
+	}	
+}
+
+@media (max-width: 599px) {
+	#body-wrap .col-8 {
+	    width: 100%;
+	}
+	.container {
+		width: 100%;
+	}
+	#body-wrap .page-title {
+	    width: 98%;
+	}
+	#body-wrap .col-4 {
+	    width: 100%;
+	    margin-left: 0; /* Reset margin for better centering */
+	    opacity: 0.1;
+	    height: auto; /* Adjust height for mobile */
+	}
+}
+
+@media (max-width: 540px) {
+	.container {
+    	padding-right: 10px;
+	    padding-left: 10px;
+	}
+	.main-content h1 {
+	    font-size: 2.4em;
+	}
+	#form .form-group {
+	    flex-wrap: wrap;
+	}
+	.form-group input.form-control {
+	    width: 100%;
+	    margin-bottom: 10px;
+        background: #e4edf7;
+	}
+	.form-group button.submit-button {
+	    width: 100%;
+	}
+	#body-wrap .col-4 {
+	    margin-left: 0; /* Remove margin for better mobile alignment */
+	    height: auto; /* Allow height to adjust based on content */
+	}
+}
+
+/* Adjustments for logo and image */
+.logo img {
+    width: 100%; /* Ensure logo scales with width */
+    max-width: 300px; /* Increase maximum width for visibility */
+    height: auto;
+}
+
+.sideimg {
+    width: 100%; /* Responsive side image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+</style>
+
+<body>
+	
+	<div id="body-wrap">
+		<div class="row">
+			<div class="col-8">
+				<div class="container">
+
+					<header id="header">
+						<div class="logo">
+							<img src="images/1.png" alt="logo">
+						</div>	
+					</header>
+
+					<div class="main-content">
+
+						<div class="page-title">
+
+							<h1>We are launching soon!</h1>
+
+						</div><!--page-title-->
+
+						<form id="form">
+
+							<p>Subscribe For Exclusive Drops</p>
+
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Your email address">
+								<button type="button" class="submit-button"><i class="icon icon-envelope"></i><span>SUBSCRIBE</span></button>
+							</div>
+
+						</form>
+
+					</div><!--main-content-->
+
+					<footer id="footer">
+
+						<div class="social-links">
+							<ul>
+								<li><a href="https://www.instagram.com/dami.mode/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+							</ul>
+						</div><!--social-links-->
+
+						<div class="copyright">
+							<p>Copyright &copy; <a href="https://damimode.com" target="_blank"> damimode.com</a> 2024. <a href="https://templatesjungle.gumroad.com/l/countdown-free-lightweight-under-construction-template" target="_blank" style="color: #0043ee;"> <b> <u>    </u></b> </a></p>
+							
+						</div>
+
+					</footer>
+
+				</div>
+			</div><!--col-8-->
+
+			<div class="col-4">
+				<img src="images/21.png" alt="wallpaper" class="sideimg">
+			</div>		
+		</div><!--row-->
+
+	</div><!--body-wrap-->
+
+</body>
+</html>
